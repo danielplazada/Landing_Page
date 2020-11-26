@@ -1,14 +1,14 @@
 .nav_tgl {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    cursor: pointer;
-    height: 2rem;
+     height: 2rem;
     left: 2rem;
     position: fixed;
     top: 2rem;
     width: 3.6rem;
     z-index: 2;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    cursor: pointer;
   }
   
   .nav_tgl:hover { opacity: 0.8; }
@@ -16,6 +16,10 @@
   .nav_tgl .nav_tgl_bar,  .nav_tgl .nav_tgl_bar::after,  .nav_tgl .nav_tgl_bar::before {
     position: absolute;
     top: 50%;
+    background: white;
+    content: '';
+    height: 0.4rem;
+    width: 100%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -24,10 +28,7 @@
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    background: white;
-    content: '';
-    height: 0.4rem;
-    width: 100%;
+    
   }
   
   .nav_tgl .nav_tgl_bar { margin-top: 0; }
@@ -42,15 +43,15 @@
     background: white;
     margin-top: 0;
   }
-  
+   .nav_tgl.expanded .nav_tgl_bar::before {
+    -ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
   .nav_tgl.expanded .nav_tgl_bar::after {
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
   }
   
-  .nav_tgl.expanded .nav_tgl_bar::before {
-    -ms-transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
+ 

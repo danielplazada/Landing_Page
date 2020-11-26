@@ -1,16 +1,11 @@
 li{
     font-family:'Andale Mono', monospace;
-    background-color: aqua;
+    background-color:transparent;
     font-weight: bolder;
     font-size: 90px;
     padding: 15px;
 }
-img{
-    contain: content;
-    align-items:center;
-    width:500px;
-    height:200px;
-}
+
 h1 {
     text-transform: uppercase;
     padding-top:90px;
